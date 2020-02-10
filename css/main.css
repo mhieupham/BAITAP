@@ -38,3 +38,10 @@
     height: 26px;
     background-color: aqua;
 }
+.hinhthangvuong{
+	border-bottom: 29px solid #15a3e6;
+    border-left: 0px solid transparent;
+    border-right: 18px solid transparent;
+    height: 0;
+    width: 161px;
+}
