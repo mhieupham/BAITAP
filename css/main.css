@@ -45,3 +45,86 @@
     height: 0;
     width: 161px;
 }
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  /* cái này là sau này bác tìm hiểu đến rem và em sẽ cần đến giờ thì chưa cần đâu */
+/*  font-size: 62.5%;*/
+}
+
+body {
+  line-height: 1.4;
+  font-weight: 400;
+  color: #333;
+}
+.header__menu-bottom {
+  width: 100%;
+  background-color: rgb(221, 215, 215);
+/*  padding: 15px;*/
+  
+} 
+.header__menu-bottom ul li{
+/*  position: relative;*/
+}
+.menuc2{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.header__menu-bottom ul li ul{
+  position: absolute;
+  background: rgb(100, 78, 129);
+  display: none;
+  top:72%;
+  margin-top: 15px;
+  width: 900px;
+  font-size: 14px;
+    z-index: 10;
+}
+.header__menu-bottom ul li:hover ul {
+  display: block;
+}
+ul li ul li a:hover{
+  color: rgb(78, 44, 57);
+}
+ul.menu-ngang  { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+  list-style: none; 
+  width: 900px; 
+  margin: auto;
+    position: relative;
+}
+ul.menu-ngang > li > a { 
+  text-decoration: none; 
+  color: black; 
+  font-size: 14px;
+  font-family: Tahoma ; 
+  text-transform: uppercase; 
+  padding: 19px 12px;
+    display: block;
+} 
+ul.menu-ngang > li > a:hover{ 
+  color: rgb(106, 106, 240);
+} 
+ul.submenu li a { 
+  text-decoration: none; 
+}
+.menuc2 li{
+    list-style: none;
+}
+.menuc2 li a{
+    display: block;
+    padding: 13px;
+    text-decoration: none;
+    color: #000;
+}
